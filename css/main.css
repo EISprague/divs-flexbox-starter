@@ -108,23 +108,31 @@ body {
   height: 100%;
 }
 
+header, main {
+    color: #fff;
+    border: 1px solid black;
+    background-color: deeppink;
+    width: 100%;
+}
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+    flex-flow: row wrap;
 }
 
 .div-1, .div-2, .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   color: #fff;
-    padding: 30px;
     border: 1px solid black;
+    padding: 10px;
   line-height: 1.5em;
   font-size: 1em;
   background-color: deeppink;
     display: flex;
-    width: 30%;
+    flex: 1 1 30%;
     justify-content: center;
     align-items: center;
 }
